@@ -18,6 +18,8 @@ h1 {
   font-family: Arial, Helvetica, sans-serif;
   background-color: rgba(128, 255, 0, 0.445);
   text-align: center;
+  margin-left: 90px;
+  margin-right: 90px;
 }
 
 .botoes {
