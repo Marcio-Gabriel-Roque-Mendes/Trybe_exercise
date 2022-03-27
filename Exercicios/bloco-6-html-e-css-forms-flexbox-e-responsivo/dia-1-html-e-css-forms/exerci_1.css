@@ -12,7 +12,10 @@ h1 {
 }
 
 #formulario {
-  border: 2px solid black;
+  border: 1px solid black;
+  border-style: dashed;
+  border-color: darkcyan;
+  border-width: medium;
   margin: 15px;
   padding: 20px 25px;
   font-family: Arial, Helvetica, sans-serif;
