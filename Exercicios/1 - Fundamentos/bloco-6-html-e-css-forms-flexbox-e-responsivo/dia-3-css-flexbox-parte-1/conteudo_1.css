@@ -13,16 +13,16 @@
 .box-container {
   background-color: #0fa36b;
   display: flex;
-  /* flex-direction: row;
-  flex-wrap: wrap; */
+  flex-direction: row;
+  flex-wrap: wrap;
   
   /* Atalho para o flex-direction e flex-wrap 👇🏾*/
 
-  /* flex-flow: column wrap; /*4 */
+  /* flex-flow: column wrap; 4 */
   /* flex-flow: column wrap-reverse; /*1 */
   /* flex-flow: column-reverse wrap-reverse; /*2*/
   /* flex-flow: column-reverse wrap; 3 */
-  /* flex-flow: row wrap; /*4 */
+  /* flex-flow: row wrap; 4 */
   /* flex-flow: row wrap-reverse; 1 */
   /* flex-flow: row-reverse wrap-reverse; /*2 */
   /* flex-flow: row-reverse wrap; /*3 */
