@@ -7,27 +7,25 @@ h1 {
   text-align: center;
   margin-top: 10px;
   margin-bottom: -5px;
-  margin-left: 20px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 #formulario {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   border-style: dashed;
   border-color: darkcyan;
   border-width: medium;
-  margin: 15px;
+  margin: 15px 90px;
   padding: 20px 25px;
   font-family: Arial, Helvetica, sans-serif;
   background-color: rgba(128, 255, 0, 0.445);
   text-align: center;
-  margin-left: 90px;
-  margin-right: 90px;
+  /* margin-left: 90px;
+  margin-right: 90px; */
 }
 
 .botoes {
   margin: 20px;
-  padding: -40;
   text-align: center;
 }
 
@@ -36,6 +34,7 @@ h1 {
   border-radius: 10px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 17px;
+  font-weight: bold;
   background-color: rgb(53, 153, 14);
 }
 
@@ -44,5 +43,6 @@ h1 {
   border-radius: 10px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 17px;
+  font-weight: bold;
   background-color: rgb(53, 153, 14);
 }
