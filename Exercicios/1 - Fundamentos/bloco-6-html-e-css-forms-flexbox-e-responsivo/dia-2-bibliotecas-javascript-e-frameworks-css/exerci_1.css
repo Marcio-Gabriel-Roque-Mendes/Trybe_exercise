@@ -1,0 +1,18 @@
+body {
+  background-color: rgb(10, 214, 146);
+}
+
+#title{
+  font-weight: 900;
+}
+
+#nome, #email, #caixaTexto, #data{
+  background-color: springgreen;
+}
+
+#botoes{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: space-between;
+}
