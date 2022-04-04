@@ -1,7 +1,7 @@
-const botaoUm = document.querySelector('#botao1')
+const botaoUm = document.querySelector('#botao2')
 
 function pararSubmit(submit) {
   submit.preventDefault()
 }
 
-botaoUm.addEventListener('click', pararSubmit)
+botao2.addEventListener('click', pararSubmit)
