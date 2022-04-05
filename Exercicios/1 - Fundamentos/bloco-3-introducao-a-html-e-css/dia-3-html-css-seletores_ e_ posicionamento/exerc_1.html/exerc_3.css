@@ -1,0 +1,35 @@
+#decora {
+  text-decoration: underline;
+}
+
+h1, p {
+  text-align: center;
+}
+
+.decora:hover, .motive:hover{
+  color: aqua;
+}
+
+.decora:active, .motive:active{
+  color:crimson;
+  font-weight: bold;
+}
+
+#unique-style{
+  list-style: none;
+}
+
+#unique-style:hover{
+  color: blueviolet;
+}
+
+#unique-style{
+  list-style: none;
+}
+
+#unique-style:active{
+  color: darkred;
+  font-weight: bold
+}
+
+

@@ -1,0 +1,35 @@
+div:hover {
+  text-decoration: underline;
+  font-weight: bolder;
+}
+
+div:nth-child(3){
+  color: rgba(223, 196, 43, 0.856);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+div:nth-child(4){
+  color: blueviolet;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+div:nth-child(5){
+  color: crimson;
+  font-family: 'Gideon Roman', cursive;
+  font-size: larger;
+}
+
+div:nth-child(6){
+  color: rgb(13, 64, 24);
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+div:nth-child(7){
+  color: greenyellow;
+  font-family: 'Raleway', sans-serif;
+}
+
+h3:nth-of-type(2n+1) {
+  text-decoration: line-through;
+  font-style: italic;
+}
