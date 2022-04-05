@@ -1,0 +1,68 @@
+/*
+ Fonts novas:
+      - helvetica
+      - fantasy (estilo star wars)
+      - cursive (letra de mão)
+      - monospace (todas letras com a mesma largura)
+*/
+head {
+  font: normal arial;
+  text-align:center;
+  line-height: 200;
+  font-style: serif;
+}
+
+body {
+  font-size:16px;
+}
+
+#Title { 
+  font-family: sans-serif;
+  font-size:65px;
+  color: rgb(255, 136, 11)
+}
+
+.Estilo-da-lista {
+  font-family: helvetica;
+  color: wheat;
+  background-color: rgb(144, 141, 148);
+  width: 120px;
+}
+
+#qual_cor {
+  font-family: cursive;
+  font-size:48px;
+  font-weight: 600pt;
+}
+
+#am {
+  text-decoration:line-through ;
+  color: yellow;
+  font-family: fantasy;
+}
+
+#ver {
+  color: red;
+  font-family: fantasy;
+}
+
+#mar{
+  font-weight: bolder;
+  color: rgb(133, 55, 24);
+}
+
+.ve {
+  text-decoration: underline;
+  font-weight: bold;
+  color: rgb(6, 83, 6);
+}
+
+.zu {
+  color: blue
+}
+
+.las {
+  text-decoration:overline;
+  font-weight: bolder;
+  color:rgb(133, 77, 185);
+}
