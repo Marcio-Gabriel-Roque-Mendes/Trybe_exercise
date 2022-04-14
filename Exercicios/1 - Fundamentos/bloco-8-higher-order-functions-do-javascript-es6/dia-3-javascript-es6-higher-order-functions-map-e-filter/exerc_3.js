@@ -1,5 +1,4 @@
-const books = [
-  {
+const books = [{
     id: 1,
     name: 'As Crônicas de Gelo e Fogo',
     genre: 'Fantasia',
@@ -59,22 +58,28 @@ const books = [
     },
     releaseYear: 1928,
   },
+  {
+    id: 7,
+    name: '1984',
+    genre: 'Ficção Distópica',
+    author: {
+      name: 'George Orwell',
+      birthYear: 1903
+    },
+    releaseYear: 1949
+  }
 ];
 
 /*
-Crie um array com strings no formato 
-NOME_DO_LIVRO - GÊNERO_DO_LIVRO - NOME_DA_PESSOA_AUTORA
+Crie um array com todos os objetos que possuem gênero 
+ficção científica ou fantasia.
+
+Dica: use a função filter ;
 */
 
-// Esperado:
-// const expectedResult = [
-//   'As Crônicas de Gelo e Fogo - Fantasia - George R. R. Martin',
-//   'O Senhor dos Anéis - Fantasia - J. R. R. Tolkien',
-//   'Fundação - Ficção Científica - Isaac Asimov',
-//   'Duna - Ficção Científica - Frank Herbert',
-//   'A Coisa - Terror - Stephen King',
-//   'O Chamado de Cthulhu - Terror - H. P. Lovecraft',
-// ];
+function fantasyOrScienceFiction(objetos) {
+  objetosComGenerosBuscados = objetos.filter((objeto) => objeto.genre === 'Ficção Científica' || objeto.genre === 'Fantasia')
+  return objetosComGenerosBuscados
+}
 
-const formatoEsperado = books.map((livro) => `${livro.name} - ${livro.genre} - ${livro.author.name}`)
-console.log(formatoEsperado);
+console.log(fantasyOrScienceFiction(expectedResult));

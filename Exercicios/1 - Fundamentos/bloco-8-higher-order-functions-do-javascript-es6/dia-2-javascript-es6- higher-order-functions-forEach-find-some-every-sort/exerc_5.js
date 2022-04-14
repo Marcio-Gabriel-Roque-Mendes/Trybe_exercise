@@ -62,19 +62,17 @@ const books = [
 ];
 
 /*
-Crie um array com strings no formato 
-NOME_DO_LIVRO - GÊNERO_DO_LIVRO - NOME_DA_PESSOA_AUTORA
+Faça uma função que retorne true , se todas as 
+pessoas autoras nasceram no século XX, ou false , 
+caso contrário.
 */
 
-// Esperado:
-// const expectedResult = [
-//   'As Crônicas de Gelo e Fogo - Fantasia - George R. R. Martin',
-//   'O Senhor dos Anéis - Fantasia - J. R. R. Tolkien',
-//   'Fundação - Ficção Científica - Isaac Asimov',
-//   'Duna - Ficção Científica - Frank Herbert',
-//   'A Coisa - Terror - Stephen King',
-//   'O Chamado de Cthulhu - Terror - H. P. Lovecraft',
-// ];
+const expectedResult = false;
 
-const formatoEsperado = books.map((livro) => `${livro.name} - ${livro.genre} - ${livro.author.name}`)
-console.log(formatoEsperado);
+function everyoneWasBornOnSecXX(livros) {
+  const todosNasceramNoSeculoVinte = livros.every((pessoa) => pessoa.author.birthYear > 1901)
+  let resposta = todosNasceramNoSeculoVinte ? 'Todas as pessoas nasceram no século XX' : 'Nem todas as pessoas nasceram no século XX'
+  console.log(resposta)
+}
+
+everyoneWasBornOnSecXX(books)

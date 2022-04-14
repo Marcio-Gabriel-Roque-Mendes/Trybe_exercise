@@ -1,11 +1,21 @@
-const numeALe = (numero) => {
+const numeALe = (numero, callback) => {
   const numSort = Math.round(Math.random(1) * 5)
-  let numAposta = Math.round(Math.random(numero) * 5)
-  if (numSort === numAposta){
-    return `Parabéns você ganhou ${numSort}`
+  let numAposta = numero;
+  return callback(numSort, numAposta)
+}
+
+const verificaNumero = (sorteado, apostado) =>{
+  if (sorteado === apostado){
+    return `parabéns você ganhou ${sorteado}`
   } else {
-    return `Tente novamente, ${numSort}`
+    return `tente novamente, voce apostou que seria ${apostado} o numero sorteado foi ${sorteado}`
   }
 }
 
-console.log(numeALe(2));
+
+const nomePessoas = (nome, sorteio, funcao) => {
+  return `${nome} ${numeALe(sorteio, funcao)}`
+};
+
+console.log(nomePessoas('Rivaldo', 3, verificaNumero));
+console.log(nomePessoas('Luisa', 1, verificaNumero));

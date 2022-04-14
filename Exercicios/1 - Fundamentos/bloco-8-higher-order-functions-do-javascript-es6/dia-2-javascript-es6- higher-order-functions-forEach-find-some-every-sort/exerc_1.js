@@ -62,19 +62,11 @@ const books = [
 ];
 
 /*
-Crie um array com strings no formato 
-NOME_DO_LIVRO - GÊNERO_DO_LIVRO - NOME_DA_PESSOA_AUTORA
+Encontre o nome da primeira pessoa autora do livro 
+nascida no ano de 1947.
+
+Dica: use a função find .
 */
 
-// Esperado:
-// const expectedResult = [
-//   'As Crônicas de Gelo e Fogo - Fantasia - George R. R. Martin',
-//   'O Senhor dos Anéis - Fantasia - J. R. R. Tolkien',
-//   'Fundação - Ficção Científica - Isaac Asimov',
-//   'Duna - Ficção Científica - Frank Herbert',
-//   'A Coisa - Terror - Stephen King',
-//   'O Chamado de Cthulhu - Terror - H. P. Lovecraft',
-// ];
-
-const formatoEsperado = books.map((livro) => `${livro.name} - ${livro.genre} - ${livro.author.name}`)
-console.log(formatoEsperado);
+let autorOuAutora = books.find((autorOuAutora) => autorOuAutora.author.birthYear === 1947);
+console.log(autorOuAutora.author.name);
