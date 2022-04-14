@@ -47,7 +47,7 @@ const books = [
       name: 'Stephen King',
       birthYear: 1947,
     },
-    releaseYear: 1986,
+    releaseYear: 1996,
   },
   {
     id: 6,
@@ -60,21 +60,25 @@ const books = [
     releaseYear: 1928,
   },
 ];
-
 /*
-Crie um array com strings no formato 
-NOME_DO_LIVRO - GÊNERO_DO_LIVRO - NOME_DA_PESSOA_AUTORA
+Faça uma função que retorne true , se algum livro foi 
+lançado na década de 80, e false , caso contrário
 */
 
-// Esperado:
-// const expectedResult = [
-//   'As Crônicas de Gelo e Fogo - Fantasia - George R. R. Martin',
-//   'O Senhor dos Anéis - Fantasia - J. R. R. Tolkien',
-//   'Fundação - Ficção Científica - Isaac Asimov',
-//   'Duna - Ficção Científica - Frank Herbert',
-//   'A Coisa - Terror - Stephen King',
-//   'O Chamado de Cthulhu - Terror - H. P. Lovecraft',
-// ];
+const expectedResult = true;
 
-const formatoEsperado = books.map((livro) => `${livro.name} - ${livro.genre} - ${livro.author.name}`)
-console.log(formatoEsperado);
+// // Função em VARIAS LINHAS
+
+// function someBookWasReleaseOnThe80s(livros) {
+//   const verificaTrue = livros.some((livro) => {
+//     return livro.releaseYear > 1980 && livro.releaseYear < 1990;
+//   });
+//   return verificaTrue
+// }
+
+// Função em UMA LINHA
+
+function someBookWasReleaseOnThe80s(livros) { return livros.some((livro) => livro.releaseYear > 1980 && livro.releaseYear < 1990 );}
+
+
+console.log(someBookWasReleaseOnThe80s(books));

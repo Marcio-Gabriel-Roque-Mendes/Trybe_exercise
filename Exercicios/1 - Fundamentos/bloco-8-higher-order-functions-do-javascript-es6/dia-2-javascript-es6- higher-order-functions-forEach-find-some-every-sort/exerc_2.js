@@ -62,19 +62,19 @@ const books = [
 ];
 
 /*
-Crie um array com strings no formato 
-NOME_DO_LIVRO - GÊNERO_DO_LIVRO - NOME_DA_PESSOA_AUTORA
+2 - Retorne o nome do livro de menor nome.
+Dica: use a função forEach 
 */
+function smallerName() {
+  let nameBook;
 
-// Esperado:
-// const expectedResult = [
-//   'As Crônicas de Gelo e Fogo - Fantasia - George R. R. Martin',
-//   'O Senhor dos Anéis - Fantasia - J. R. R. Tolkien',
-//   'Fundação - Ficção Científica - Isaac Asimov',
-//   'Duna - Ficção Científica - Frank Herbert',
-//   'A Coisa - Terror - Stephen King',
-//   'O Chamado de Cthulhu - Terror - H. P. Lovecraft',
-// ];
+books.forEach((book) => {
+  if (!nameBook || book.name.length < nameBook.length){
+    nameBook = book.name;
+  }
+})
+  return nameBook;
+}
 
-const formatoEsperado = books.map((livro) => `${livro.name} - ${livro.genre} - ${livro.author.name}`)
-console.log(formatoEsperado);
+console.log(smallerName(books));
+
