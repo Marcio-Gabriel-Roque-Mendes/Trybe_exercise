@@ -1,4 +1,11 @@
-// Incompleto
+/*
+Agora crie uma função usando os dados dos estudantes 
+que usamos no conteúdo do dia anterior, para mostrar 
+na tela um relatório que diz em qual matéria o 
+estudante foi melhor. Você usará tanto o map quanto,
+o reduce, dentro dele !
+
+*/
 const estudantes = [
   {
     nome: 'Jorge',
@@ -73,3 +80,24 @@ const estudantes = [
     ],
   },
 ];
+/*
+Resultado esperado:
+Copiar
+[
+  { name: 'Jorge', materia: 'Português' },
+  { name: 'Mario', materia: 'Biologia' },
+  { name: 'Jorge', materia: 'Português' },
+  { name: 'Maria', materia: 'Química' },
+  { name: 'Natalia', materia: 'Português' },
+  { name: 'Wilson', materia: 'Português' },
+]
+*/
+
+const getBestClass = (acc, materia) => {
+ const estudantesENota = estudantes.map((nomeAluno, indice) => ({
+   name: nomeAluno,
+   materia: [indice].materias
+ }
+ )
+ )
+};

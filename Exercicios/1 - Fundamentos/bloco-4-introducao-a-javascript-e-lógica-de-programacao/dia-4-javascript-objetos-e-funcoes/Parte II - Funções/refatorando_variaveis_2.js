@@ -6,4 +6,4 @@ function maiorNumero (priNum, segNum){
   }
 }
 
-console.log(maiorNumero(1234, 9860))
+console.log(maiorNumero(1234, 9860) + 'normal')

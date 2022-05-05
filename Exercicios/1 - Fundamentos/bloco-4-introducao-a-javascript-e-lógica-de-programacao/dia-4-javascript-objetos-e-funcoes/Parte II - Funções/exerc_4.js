@@ -5,7 +5,7 @@ let nomes = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
 let inicial = nomes[0];
 
 
-function achamaior (a, b){
+function achaMaior (a, b){
   for (let indice = 0; indice < a.length; indice += 1){
     if (b.length < a[indice].length){
       b = a[indice]
@@ -17,4 +17,4 @@ function achamaior (a, b){
   era Fernanda seguido de undefined*/
 
 }
-console.log(achamaior(nomes, inicial));
+console.log(achaMaior(nomes, inicial));
