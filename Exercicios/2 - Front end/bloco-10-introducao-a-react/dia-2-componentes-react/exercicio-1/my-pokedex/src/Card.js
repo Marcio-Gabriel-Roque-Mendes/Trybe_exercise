@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from 'prop-types'
 
 class Card extends Component{
   render(){
@@ -18,6 +19,14 @@ class Card extends Component{
 
     )
   }
+}
+
+Card.propTypes = {
+  image: PropTypes.string,
+  name: PropTypes.string,
+  type: PropTypes.string,
+  value: PropTypes.number,
+  measurementUnit: PropTypes.string
 }
 
 export default Card;
