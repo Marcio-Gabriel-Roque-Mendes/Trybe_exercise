@@ -20,7 +20,7 @@ class App extends React.Component {
 
     return (
       <div className="App">
-        {users.map(user => <UserProfile key={user.id} user={user} />)}
+        {users.map(usuario => <UserProfile key={usuario.id} user={usuario} />)}
       </div>
     );
   }

@@ -3,8 +3,10 @@ import logo from './logo.svg';
 import './App.css';
 import Component from './Component';
 
-function App() {
-  return <Component /> ;
+class App extends React.Component{
+  render() {
+    return <Component /> ;
+  }
 }
 
 export default App;
