@@ -1,0 +1,14 @@
+{
+  "name": "exercicio-1-teste-numero-aleatorio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "numero-aleatorio.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^28.1.0"
+  }
+}
