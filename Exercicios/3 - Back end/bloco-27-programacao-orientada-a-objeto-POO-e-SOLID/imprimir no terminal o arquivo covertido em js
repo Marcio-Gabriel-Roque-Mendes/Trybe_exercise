@@ -1,0 +1,9 @@
+ imprimir no terminal o arquivo covertido em .js 
+ 
+ npm init -y
+ npm i typescript ts-node -D
+ npm install -D @tsconfig/node16
+ touch tsconfig.json
+ npm install -D @types/node
+ tsc -t es5 superclasse.ts
+ node superclasse.js
