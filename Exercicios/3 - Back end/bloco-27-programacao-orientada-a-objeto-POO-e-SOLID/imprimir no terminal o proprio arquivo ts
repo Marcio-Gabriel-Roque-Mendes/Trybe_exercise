@@ -1,0 +1,4 @@
+imprimir no terminal o proprio arquivo .ts
+
+npm i typescript ts-node -D
+npx ts-node studenst.ts (students.ts é o nome do arquivo)
