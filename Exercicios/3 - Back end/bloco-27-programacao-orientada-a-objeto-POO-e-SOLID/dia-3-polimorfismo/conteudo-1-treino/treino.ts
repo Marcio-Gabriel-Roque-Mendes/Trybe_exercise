@@ -16,12 +16,12 @@ class Animal {
   console.log(a, b, m);
   
   
-  const myMove = (animal: Animal) => {
+  const myMovee = (animal: Animal) => {
     animal.move();
   }
-  myMove(a);
-  myMove(b);
-  myMove(m);
+  myMovee(a);
+  myMovee(b);
+  myMovee(m);
   
   /*
   Saída:

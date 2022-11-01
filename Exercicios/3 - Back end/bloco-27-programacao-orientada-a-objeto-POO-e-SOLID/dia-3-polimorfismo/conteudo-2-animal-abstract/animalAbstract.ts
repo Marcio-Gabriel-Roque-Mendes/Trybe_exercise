@@ -18,7 +18,7 @@ abstract class Animal2 {
   const A = new Fish('Tubarão');
   const B = new Bird2('Papagaio');
   const M = new Mammal2('Tatu');
-  const myMovee = (animal: Animal2) => {
+  const myMove = (animal: Animal2) => {
     animal.move();
   }
   myMove(A);
