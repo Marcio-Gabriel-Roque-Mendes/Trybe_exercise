@@ -1,0 +1,24 @@
+// use heroes (para usar no terminal)
+use("heroes");
+
+// 🚀 Exercício 1: Inspecione um documento para que você se familiarize com eles. Entenda os campos e os níveis existentes no documento escolhido.
+db.superheroes.findOne();
+
+// 🚀 Exercício 2: Selecione todos os super-heróis com menos de 1.80m de altura. Lembre-se de que essa informação está em centímetros.
+db.superheroes.find({"aspects.height": {$lt: 180}}).pretty()
+
+// 🚀 Exercício 3: Retorne o total de super-heróis menores que 1.80m.
+db.superheroes.countDocuments({"aspects.height": {$lt: 180}}).pretty()
+
+// 🚀 Exercício 9: Utilizando o operador $in, selecione todos os super-heróis com cabelos pretos ou carecas ("No Hair").
+db.superheroes.find({ "aspects.hairColor": { $in: ["black", "No Hair"]}}).pretty();
+
+// 🚀 Exercício 12: Utilizando o operador $not, retorne o total de super-heróis que não tenham mais de 1.80m de altura.
+db.superheroes.countDocuments(
+    { "aspects.height": { $not: { $gt: 180 } } }
+);
+
+// 🚀 Exercício 19: Remova todos os documentos publicados pelo George Lucas.
+db.superheroes.deleteMany(
+    { publisher: "George Lucas" }
+);

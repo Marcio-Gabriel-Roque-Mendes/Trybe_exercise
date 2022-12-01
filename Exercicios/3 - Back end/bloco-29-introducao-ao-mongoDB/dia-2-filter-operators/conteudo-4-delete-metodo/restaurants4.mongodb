@@ -1,0 +1,8 @@
+use("business")
+db.restaurants.countDocuments({cuisine: "Ice Cream, Gelato, Yogurt, Ices"})
+
+// Remova o primeiro restaurante que possua culinária do tipo Ice Cream, Gelato, Yogurt, Ices.
+db.restaurants.deleteOne({cuisine: "Ice Cream, Gelato, Yogurt, Ices"})
+
+// Remova todos os restaurantes com o nome 1 East 66Th Street Kitchen.
+db.restaurants.deleteMany({name: "1 East 66Th Street Kitchen"})

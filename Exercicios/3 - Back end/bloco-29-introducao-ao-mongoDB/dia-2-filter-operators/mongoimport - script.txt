@@ -1,0 +1,11 @@
+-- Copia do arquivo para o container (precisa estar na pasta onde o arq estiver)
+-- o diretorio tmp esta sendo criado por esse comando dentro do container
+docker cp restaurants.json trybe-mongo-4:/tmp/restaurants.json 
+
+-- trybe-mongo-4 é o container
+docker exec -it trybe-mongo-4 bash
+
+-- business é o nome da collection(tabela), restaurants documento(linha)
+mongoimport -d business -c restaurants --jsonArray --file /tmp/restaurants.json
+
+(--jsonArray é necessario porque estou usando a versao 4 do mongoDB na imagem do container)

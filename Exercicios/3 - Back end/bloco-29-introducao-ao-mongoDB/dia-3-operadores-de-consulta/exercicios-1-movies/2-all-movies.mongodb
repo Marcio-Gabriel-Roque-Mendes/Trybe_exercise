@@ -1,0 +1,20 @@
+use ("cinema")
+db.getCollection('movies').find({})
+
+db.movies.find({ 
+    $and: [
+        {category: { $all: ["action", "sci-fi"] }},
+        {imdbRating: { $gt: 7}}    
+    ] 
+});
+
+// OU
+
+// db.movies.find(
+//   {
+//     category: {
+//       $all: ["action", "sci-fi"]
+//     },
+//     imdbRating: { $gt: 7 }
+//   }
+// ).pretty();
