@@ -3,6 +3,11 @@
 # (método read, necessário na operação de leitura). Este objeto será alocado
 # na memória, “simulando” nosso arquivo real.
 
+# Essa primeira abordagem torna o código menos acoplado a um arquivo e nos
+# permite utilizar qualquer objeto (que tenha o método reader) em seu lugar.
+# Assim, essa função pode ser reutilizada, por exemplo, para ler pokemons a
+# partir de uma requisição web ou outra fonte.
+
 import json
 import pytest
 from pokemon_arq_1 import retrieve_pokemons_by_type
@@ -53,3 +58,10 @@ def test_retrieve_pokemons_by_type(grass_type_pokemon, water_type_pokemon):
     # quando pesquisamos por pokemons do tipo grama,
     # o pokemon do tipo água não deve ser retornado
     assert grass_type_pokemon in retrieve_pokemons_by_type("Grass", fake_file)
+
+
+# StringIO: grava na memoria e não no disco, Sendo muito útil para
+# desenvolvedores Júnior, já que nem um instrutor da trybe,
+# o Isaac sabia para o que servia e mesmo depois de ler a documentação,
+# não encontrou uma razão muito grande para utilizá-la,
+# provavelmente é o util em casos muito específicos
