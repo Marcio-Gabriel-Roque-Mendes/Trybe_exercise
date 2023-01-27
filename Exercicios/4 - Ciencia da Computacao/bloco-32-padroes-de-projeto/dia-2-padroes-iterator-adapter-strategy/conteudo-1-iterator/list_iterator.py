@@ -1,3 +1,5 @@
+# Padrão de Projeto ITERATOR
+
 times_paulistas = ['São paulo', 'Corinthians', 'Palmeiras', 'Santos']
 
 iterando = iter(times_paulistas)
